@@ -1,0 +1,149 @@
+/* ===== Tipografía y reset ===== */
+body {
+    margin: 0;
+    background: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ===== Top App Bar ===== */
+.topbar {
+    background: #2196F3;
+    color: white;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* ===== Contenedor ===== */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ===== Card ===== */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+/* ===== Inputs ===== */
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #444;
+}
+
+.input-field input,
+.input-field textarea {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* ===== Botón ===== */
+.btn {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ===== Card de ideas ===== */
+.idea-card {
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.idea-card h3 {
+    margin: 0 0 5px;
+}
+
+.idea-card p {
+    margin: 0;
+}
+
+/* ===== FAB (Botón flotante) ===== */
+.fab {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #F44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Waves-effect ===== */
+.waves {
+    transition: background 0.3s;
+}
+
+.waves:active {
+    opacity: 0.7;
+}
+
+/* ===== Snackbar ===== */
+#snackbar {
+    visibility: hidden;
+    min-width: 200px;
+    background-color: #323232;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 15px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 3s;
+}
+
+@keyframes fadein {
+    from { bottom: 0; opacity: 0; }
+    to   { bottom: 30px; opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { bottom: 30px; opacity: 1; }
+    to   { bottom: 0; opacity: 0; }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaBox</title>
+
+    <!-- Fuente Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top App Bar -->
+    <header class="topbar">
+        <h1>IdeaBox</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- Formulario dentro de Card -->
+        <div class="card">
+            <h2>Nueva Idea</h2>
+
+            <form id="ideaForm">
+                <div class="input-field">
+                    <label>Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Idea</label>
+                    <textarea id="idea" required></textarea>
+                </div>
+
+                <button type="submit" class="btn waves">Guardar</button>
+            </form>
+        </div>
+
+        <!-- Lista de ideas registradas -->
+        <div id="ideasList"></div>
+
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="fab waves" id="fab">
+        <span class="material-icons">add</span>
+    </button>
+
+    <!-- Snackbar -->
+    <div id="snackbar">Idea agregada correctamente</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
